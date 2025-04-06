@@ -25,7 +25,7 @@ Welcome to my personal developer portfolio! This project showcases my skills, wo
 
 ## 📁 Folder Structure
 ├── index.html 
-├── /assets
-        └── images
+├── assets/
+        └── images/
 └── README.md
 
