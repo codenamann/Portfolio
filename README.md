@@ -25,10 +25,10 @@ Welcome to my personal developer portfolio! This project showcases my skills, wo
 
 ## 📁 Folder Structure
 Portfolio/
-├── index.html             # Main HTML file
-├── assets/                # Folder containing static assets
-│   └── images/            # Folder for image files
-└── README.md              # Project overview
+- ├── index.html             # Main HTML file
+- ├── assets/                # Folder containing static assets
+- │   └── images/            # Folder for image files
+- └── README.md              # Project overview
 
 ## 🔗 Live Demo
 
