@@ -63,23 +63,23 @@
             
             <!-- Section Heading -->
             <div class="text-center">
-                <h3 class="text-lg text-blue-600 font-semibold uppercase" data-aos="fade-up">About Me</h3>
-                <h2 class="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200">Who Am I?</h2>
+                <h3 class="text-lg text-blue-600 font-semibold uppercase" data-aos="fade-up" data-aos-anchor-placement="top-bottom">About Me</h3>
+                <h2 class="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">Who Am I?</h2>
             </div>
         
             <!-- Intro Paragraph -->
-            <p class="text-lg text-center max-w-3xl mx-auto" data-aos="fade-up">
+            <p class="text-lg text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 I'm a passionate web developer who enjoys building clean, user-focused websites and turning ideas into beautiful digital products.
             </p>
         
             <!-- Skills Snapshot -->
             <div class="flex flex-wrap justify-center gap-4">
-                <span data-aos="fade-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">HTML</span>
-                <span data-aos="fade-down-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">CSS</span>
-                <span data-aos="fade-up-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">JavaScript</span>
-                <span data-aos="fade-up-left" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">Tailwind</span>
-                <span data-aos="fade-down-left" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">Git</span>
-                <span data-aos="fade-left" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">GitHub</span>
+                <span  class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">HTML</span>
+                <span  class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">CSS</span>
+                <span  class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">JavaScript</span>
+                <span  class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">Tailwind</span>
+                <span  class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">Git</span>
+                <span  class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">GitHub</span>
             </div>
         
             <!-- Download Resume Button -->
@@ -255,10 +255,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({
-          once: false, // animate every time you scroll
-          duration: 800,
-          offset: 100, // triggers a bit before the element enters
+            once: false, // animate every time you scroll
+            duration: 800,
+            offset: 100, // triggers a bit before the element enters
+            disable: function () {
+                return window.innerWidth < 768; // Disable on screens smaller than 768px
+            }
         });
-      </script>
+    </script>
 </body>
 </html>
