@@ -24,8 +24,14 @@ Welcome to my personal developer portfolio! This project showcases my skills, wo
 ![Portfolio Screenshot](/assets/Screenshot%20(241).png)
 
 ## 📁 Folder Structure
+Portfolio/
 ├── index.html 
 ├── assets/
-        └── images/
+│       └── images/
 └── README.md
 
+## 🔗 Live Demo
+
+[Click here to view the live website](#) <!-- Replace # with your live link when hosted -->
+
+---
