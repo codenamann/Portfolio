@@ -142,7 +142,7 @@
                 <!-- Section Heading -->
                 <div>
                     <h3 class="text-lg text-blue-600 font-semibold uppercase">My Services</h3>
-                    <h2 class="text-2xl font-bold mt-2">What I Can Do for You</h2>
+                    <h2 class="text-3xl font-bold mt-2">What I Can Do for You</h2>
                     <p class="mt-2 text-gray-300">Specializing in clean, responsive, and user-friendly frontend development.</p>
                 </div>
                 <!-- Swiper Container -->
@@ -208,7 +208,73 @@
             </div>
         </section>   
     </section>
+    <section id="projects" class="flex flex-col bg-white/5 min-h-screen py-12 px-8">
+        <div class="text-center mb-10">
+            <h3 class="text-lg text-blue-600 font-semibold uppercase" data-aos="fade-up">Projects</h3>
+            <h2 class="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200">Work in Progress</h2>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto" data-aos="fade-right">
+                I'm currently building exciting web projects! Check back soon to explore my work.
+            </p>
+        </div>
+      
+        <!-- Placeholder Cards -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white/5 p-6 rounded-xl shadow backdrop-blur-sm border border-white/10" data-aos="fade-left">
+                <h3 class="text-2xl font-semibold text-blue-500 mb-2">Bloodweb</h3>
+                <p class="text-gray-300 mb-4">A full-stack blood donation platform which connects donors and reciepients</p>
+                <span class="text-yellow-400 text-sm italic">Coming soon...</span>
+            </div>
+      
+            <div class="bg-white/5 p-6 rounded-xl shadow backdrop-blur-sm border border-white/10" data-aos="fade-right">
+                <h3 class="text-2xl font-semibold text-blue-500 mb-2">Chronos</h3>
+                <p class="text-gray-300 mb-4">A full-stack inventory management platform designed for dishtv distributor service</p>
+                <span class="text-yellow-400 text-sm italic">Coming soon...</span>
+            </div>
+        </div>
+    </section>
     
+    <section id="contact" class="py-20 px-6 text-white">
+        <div class="flex flex-col max-w-4xl mx-auto text-center items-center space-y-10" data-aos="fade-up">
+      
+            <!-- Heading -->
+            <div>
+                <h3 class="text-lg text-blue-600 uppercase font-semibold">Contact Us</h3>
+                <h2 class="text-3xl font-bold mt-2">Ways To Contact Me</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto">
+                    Got a project in mind or just want to say hi? Drop me a message.
+                </p>
+            </div>
+      
+            <!-- Contact Info Cards -->
+            <div class="inline-block flex items-center w-fit bg-blue-600 hover:bg-blue-700 transition-all duration-300 px-4 py-2 font-medium rounded-lg space-x-2">
+                <i class="fas fa-envelope text-sky-400 text-xl"></i>
+                <a href="mailto:namantiwari.core@gmail.com" class="text-sm break-all">Send an Email</a>
+            </div>
+                  
+            <!-- Socials -->
+            <div class="flex justify-center space-x-6 text-2xl text-blue-400 mt-10">
+                <a data-aos="fade-down-right" href="https://github.com/sciber766" target="_blank"><i class="fab fa-github hover:text-white transition"></i></a>
+                <a data-aos="fade-up" href="https://www.linkedin.com/in/naman-tiwari-816b7928b" target="_blank"><i class="fab fa-linkedin hover:text-white transition"></i></a>
+                <a data-aos="fade-down-left" href="https://twitter.com/Naman_sz" target="_blank"><i class="fab fa-twitter hover:text-white transition"></i></a>
+                <!-- Fiverr icon when ready -->
+                <!-- <a href="https://www.fiverr.com/yourusername" target="_blank" class="hover:text-green-400 transition"><i class="fas fa-briefcase"></i></a> -->
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0f172a] py-6 border-t border-blue-500 text-center text-sm text-gray-400">
+        <p>© <span id="year"></span> Naman Tiwari | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        // Automatically update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+      
+      
+           
+
     <style>
     html {
         scroll-behavior: smooth;
