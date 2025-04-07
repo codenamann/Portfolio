@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naman Tiwari - Web Developer Portfolio. Explore my projects, skills, and resume.">
+    <meta name="keywords" content="Naman Tiwari, web developer, frontend developer, portfolio, HTML, CSS, JavaScript, Tailwind, Bootstrap">
+    <meta name="author" content="Naman Tiwari">
+
     <title>Naman Tiwari - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="assets/NT.png">
@@ -10,8 +14,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Naman Tiwari | Frontend Developer" />
+    <meta property="og:description" content="Creating clean and modern websites using HTML, CSS, JS & Tailwind." />
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Naman Tiwari | Frontend Developer" />
+    <meta name="twitter:description" content="Creating clean and modern websites using HTML, CSS, JS & Tailwind." />
+    <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+
 </head>
-<body class="bg-gray-900 text-white" style="font-family: 'Roboto', sans-serif;">
+<body class="bg-gray-900 text-white overflow-x-hidden" style="font-family: 'Roboto', sans-serif;">
     <header class="navbar flex justify-between items-center w-[90%] mx-auto p-2 pr-4 pl-4 backdrop-blur-md bg-white/10 rounded-lg fixed top-5 left-1/2 z-50 transform -translate-x-1/2">
         <div class="logo w-12 h-12 select-none"><a href="#"><img src="assets/NT-removebg-preview.png" alt=""></a></div>
         <nav class="flex pr-4">
@@ -73,7 +91,7 @@
             </p>
         
             <!-- Skills Snapshot -->
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap justify-center gap-4 overflow-hidden">
                 <span data-aos="fade-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">HTML</span>
                 <span data-aos="fade-up-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">CSS</span>
                 <span data-aos="fade-up" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">JavaScript</span>
@@ -99,7 +117,7 @@
 
     <section id="services" class="min-h-screen py-16 px-8">
         <!-- Container -->
-        <div class="max-w-6xl mx-auto space-y-12">
+        <div class="max-w-6xl mx-auto space-y-12 overflow-x-hidden">
       
             <!-- Section Heading -->
             <div class="text-center">
@@ -218,7 +236,7 @@
         </div>
       
         <!-- Placeholder Cards -->
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="overflow-x-hidden grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div class="bg-white/5 p-6 rounded-xl shadow backdrop-blur-sm border border-white/10" data-aos="fade-left">
                 <h3 class="text-2xl font-semibold text-blue-500 mb-2">Bloodweb</h3>
                 <p class="text-gray-300 mb-4">A full-stack blood donation platform which connects donors and reciepients</p>
