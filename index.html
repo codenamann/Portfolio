@@ -29,7 +29,7 @@
     <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
 
 </head>
-<body class="bg-gray-900 text-white overflow-x-hidden" style="font-family: 'Roboto', sans-serif;">
+<body class="bg-gray-900 text-white overflow-x-hidden select-none" style="font-family: 'Roboto', sans-serif;">
     <header class="navbar flex justify-between items-center w-[90%] mx-auto p-2 pr-4 pl-4 backdrop-blur-md bg-white/10 rounded-lg fixed top-5 left-1/2 z-50 transform -translate-x-1/2">
         <div class="logo w-12 h-12 select-none"><a href="#"><img src="assets/NT-removebg-preview.png" alt=""></a></div>
         <nav class="flex pr-4">
@@ -38,17 +38,18 @@
                 <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#about">About</a></li>
                 <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#services">Services</a></li>
                 <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#projects">Projects</a></li>
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="templates.html">Templates</a></li>
                 <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="harmburger md:hidden pr-2"><i class="fa-solid fa-bars"></i></div>
-        
     </header>
     <div class="harmburger-menu z-50 max-h-0 overflow-hidden origin-top transition-all duration-[400ms] ease-in-out fixed top-[85px] md:hidden flex flex-col space-y-4 text-center shadow-lg shadow-blue-400/20 bg-sky-400/20 rounded-xl w-[90%] left-1/2 transform -translate-x-1/2 backdrop-blur-md text-stone">
         <a href="#home" class="w- p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
         <a href="#about" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">About</a>
         <a href="#services" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Services</a>
         <a href="#projects" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+        <a href="templates.html" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Templates</a>
         <a href="#contact" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Contact</a>
     </div>
     
@@ -58,7 +59,10 @@
             <div class="heroContent flex flex-col items-center md:items-start justify-center text-center">
                 <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold mb-4 text-blue-50" data-aos="fade-right">Hello, I'm Naman Tiwari</h1>
                 <p class="text-md md:text-lg mb-8 text-blue-200" data-aos="fade-right" data-aos-delay="200">A passionate web developer and designer.</p>
-                <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">View My Work</a>
+                <div class="flex gap-2">
+                    <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">View My Work</a>
+                    <a href="templates.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">Explore Templates</a>    
+                </div>
             </div>
             <div class="leftContainer">
                 <div class="heroProfile mb-4 w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-[0_0_8px_2px_rgba(66,215,245,0.4)]" data-aos="fade-left">
@@ -102,7 +106,7 @@
         
             <!-- Download Resume Button -->
             <div class="text-center">
-                <a href="#" download class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+                <a href="assets/NamanTiwari_Resume.pdf" download class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
                     Download Resume
                 </a>
             </div>

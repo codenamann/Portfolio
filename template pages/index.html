@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Business Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="w-full shadow-sm z-50 md:block flex justify-between">
+    <div class="max-w-[98%] md:mx-auto px-6 py-8 flex items-center justify-between">
+      <div class="text-xl font-semibold text-pink-600">BrandName</div>
+      <nav class="hidden md:flex space-x-4 font-medium text-gray-700">
+        <a href="#home" class="shadow-[0_0_2px_rgba(0,0,0,0.4)] px-4 py-1 bg-white hover:bg-pink-600 rounded-3xl hover:text-white transition-all duration-300 ease-in-out">Home</a>
+        <a href="#about" class="shadow-[0_0_2px_rgba(0,0,0,0.4)] px-4 py-1 bg-white rounded-2xl hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out">About Us</a>
+        <a href="#what-we-do" class="shadow-[0_0_2px_rgba(0,0,0,0.4)] px-4 py-1 bg-white rounded-2xl hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out">What We Do</a>
+        <a href="#services" class="shadow-[0_0_2px_rgba(0,0,0,0.4)] px-4 py-1 bg-white rounded-2xl hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out">Services</a>
+        <a href="#contact" class="shadow-[0_0_2px_rgba(0,0,0,0.4)] px-4 py-1 bg-white rounded-2xl hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out">Contact Us</a>
+      </nav>
+    </div>
+    <div class="flex items-center harmburger md:hidden pr-2 px-6 py-3 mr-4"><i class="fa-solid fa-bars"></i></div>
+    
+  </header>
+  <div class="harmburger-menu z-50 max-h-0 mx-auto overflow-hidden origin-top transition-all duration-[400ms] ease-in-out md:hidden flex flex-col gap-4 text-center shadow bg-stone-100 rounded-xl text-stone">
+    <a href="#home" class="hover:text-pink-500 transition ease-in-out">Home</a>
+      <a href="#about" class="hover:text-pink-500 transition ease-in-out">About Us</a>
+      <a href="#what-we-do" class="hover:text-pink-500 transition ease-in-out">What We Do</a>
+      <a href="#services" class="hover:text-pink-500 transition ease-in-out">Services</a>
+      <a href="#contact" class="hover:text-pink-500 mb-2 transition ease-in-out">Contact Us</a>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="flex flex-col h-[60vh] px-4 items-center">
+    <div class="h-120 max-w-[98%] w-full px-4 mt-1 py-6 md:p-8 rounded-3xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-20 bg-gradient-to-r from-pink-100 via-purple-100 to-indigo-100">
+      <div class="flex hover:scale-105 transition-transform shrink-0 max-w-sm w-sm h-50 md:h-60 rounded-[30px] shadow-xl overflow-hidden" data-aos="zoom-out">
+        <img 
+          src="template pages\asset\business-people-shaking-hands-together.jpg" 
+          alt="teamwork" 
+          class="hover:scale-105 transition-transform object-cover"
+        />
+      </div>
+      <!-- Text Content -->
+      <div class="flex h-[80%] flex-col gap-4 justify-center md:items-end text-center md:text-end items-center">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight" data-aos="zoom-out" data-aos-delay="50">
+          Your Vision, Built Digitally
+        </h1>
+        <p class="text-gray-700 w-fit" data-aos="fade-left" data-aos-delay="50">
+          From concept to code, we turn your ideas into fully functional web experiences.
+        </p>
+        <div class="flex self-center md:self-end gap-4 pt-2">
+          <button class="bg-pink-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+            Learn More
+          </button>
+          <button class="border border-pink-400 text-pink-500 px-6 py-3 rounded-full hover:bg-pink-50 transition">
+            Get In Touch
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="about" class="flex w-full justify-center py-20 md:py-1">
+    <div class="p-8 overflow-hidden border rounded-2xl shadow-md w-[95%] bg-gradient-to-br from-white via-slate-100 to-pink-50">
+      <h2 class="text-xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="300">About Us</h2>
+      <p class="text-gray-700 text-center max-w-2xl mx-auto" data-aos-duration="300" data-aos-delay="200" data-aos="zoom-out">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, nisl in bibendum placerat, justo lacus tristique urna, in porttitor erat erat ac mauris. 
+      <br /><br />
+      We’re focused on creating elegant and functional designs that deliver meaningful user experiences.
+      </p>
+    </div>
+    
+  </section>
+  
+  <section id="what-we-do" class="md:py-20 bg-gray-50 flex justify-center w-full">
+    <div class="w-[95%] overflow-hidden flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-white via-slate-100 to-pink-50 px-6 md:px-10 py-6 space-y-20 rounded-2xl border border-pink-200">
+      <div class="headline-holder">
+        <h2 class="text-xl font-bold text-center mb-4" data-aos="fade-up" data-aos-duration="300">What We Do</h2>
+        <p class="text-center text-gray-500 mb-12 over" data-aos-duration="300" data-aos-delay="200" data-aos="fade-up">Some placeholder text describing the kind of services this fictional agency offers.</p>
+      
+      </div>
+      <!-- Card 1 -->
+      <div class="overflow-hidden flex flex-col lg:flex-row items-center w-[98%] md:w-[90%] gap-12 border p-6 rounded-xl shadow-lg bg-white">
+        <img class="hover:scale-105 transition-transform w-full lg:w-1/3 rounded-xl shadow-lg shadow-black/20" data-aos="fade-right" data-aos-duration="600" src="https://plus.unsplash.com/premium_photo-1677529496297-fd0174d65941?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D" alt="image1">
+        <div class="lg:w-fit">
+          <h3 class="flex text-2xl font-bold mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">Collaborative Teams</h3>
+          <p class="flex text-gray-600" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+      </div>
+  
+      <!-- Card 2 (reversed) -->
+      <div class=" flex flex-col-reverse lg:flex-row w-[98%] md:w-[90%] items-center shadow-lg gap-12 border p-6 rounded-xl bg-white">
+        <div class="lg:w-fit">
+          <h3 class="flex text-2xl font-bold mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">User-Centered Design</h3>
+          <p class="flex text-gray-600" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <img class=" w-full lg:w-1/3 rounded-xl shadow-xl shadow-black/15" data-aos="fade-left" data-aos-duration="600" src="https://plus.unsplash.com/premium_photo-1683147638125-fd31a506a429?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2">
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="overflow-hidden flex flex-col lg:flex-row items-center w-[98%] md:w-[90%] shadow-lg gap-12 border p-6 rounded-xl bg-white">
+        <img class="hover:scale-105 transition-transform object-cover w-full lg:w-1/3 rounded-xl shadow-xl shadow-black/15" data-aos="fade-right" data-aos-duration="600" src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=2100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image3">
+        <div class="lg:w-fit">
+          <h3 class="flex text-2xl font-bold mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600" >Robust Codebase</h3>
+          <p class="flex text-gray-600" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="services" class="py-20 flex justify-center w-full text-gray-800 overflow-hidden">
+    <div class="w-[95%] overflow-hidden mx-auto text-center border py-10 px-6 shadow-md rounded-2xl bg-gradient-to-br from-white via-slate-100 to-pink-50">
+      <h2 class="text-xl font-bold mb-4" data-aos="fade-up" data-aos-duration="300">Our Services</h2>
+      <p class="text-gray-500 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
+        We provide tailored solutions to help you achieve your goals, blending creativity with technology.
+      </p>
+  
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
+        <!-- Card 1 -->
+        <div class="bg-white border border-pink-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="150" data-aos-duration="600">
+          <i class="fas fa-laptop-code text-pink-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p class="text-sm text-gray-600">Custom-coded websites and apps tailored to your vision and business needs.</p>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="bg-white border border-pink-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+          <i class="fas fa-pencil-ruler text-pink-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+          <p class="text-sm text-gray-600">Pixel-perfect designs focused on delivering seamless user experiences.</p>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="bg-white border border-pink-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300" data-aos="fade-left" data-aos-delay="250" data-aos-duration="600">
+          <i class="fas fa-bolt text-pink-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Performance Optimization</h3>
+          <p class="text-sm text-gray-600">Speed and SEO enhancements to boost visibility and user satisfaction.</p>
+        </div>
+  
+        <!-- Add more cards if you want -->
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-xl font-bold">What Makes Us Stand Out?</h2>
+      <p class=" text-gray-600 mt-4">We deliver value through powerful visuals and impactful numbers.</p>
+    </div>
+
+    <div class="swiper featured-swiper w-[90%] mx-auto">
+      <div class="swiper-wrapper">
+
+        <!-- Loop of Cards Begins -->
+        <template id="card-template">
+          <div class="swiper-slide">
+            <div class="bg-white h-60 h-24 border rounded-3xl p-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition duration-300 ">
+              <img src="https://img.icons8.com/ios-filled/100/code.png" class="w-16 h-16 mb-4" alt="Code Icon">
+              <h3 class="text-xl font-semibold mb-2">Custom Code</h3>
+              <p class="text-gray-600">Fully hand-coded experiences tailored to your needs.</p>
+              <span class="text-2xl font-bold mt-4">99%</span>
+            </div>
+          </div>
+        </template>
+
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="bg-white h-60 border-black rounded-3xl p-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition duration-300 ">
+            <img src="https://img.icons8.com/ios-filled/100/code.png" class="w-16 h-16 mb-4" alt="Code Icon">
+            <h3 class="text-xl font-semibold mb-2">Custom Code</h3>
+            <p class="text-gray-600">Fully hand-coded experiences tailored to your needs.</p>
+            <span class="text-2xl font-bold mt-4">99%</span>
+          </div>
+        </div>
+
+        <!-- Card 2 Highlight -->
+        <div class="swiper-slide">
+          <div class="bg-white h-60 border rounded-3xl items-center flex flex-col p-6 shadow-lg hover:scale-105 transition duration-300 ">
+            <img src="https://img.icons8.com/ios-filled/100/lightning-bolt.png" class="w-16 h-16 mb-4 mx-auto" alt="Speed Icon">
+            <h3 class="text-xl font-semibold mb-2">Blazing Performance</h3>
+            <p class="text-gray-600 text-center">Speed-optimized builds that load in milliseconds.</p>
+            <span class="block text-2xl font-bold text-center mt-4">1.2s</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="bg-white h-60 border rounded-3xl p-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition duration-300 ">
+            <img src="https://img.icons8.com/ios-filled/100/like.png" class="w-16 h-16 mb-4" alt="Satisfaction Icon">
+            <h3 class="text-xl font-semibold mb-2">Client Satisfaction</h3>
+            <p class="text-gray-600">We deliver beyond expectations with personalized support.</p>
+            <span class="text-2xl font-bold mt-4">100%</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="swiper-slide">
+          <div class="bg-white h-60 border rounded-3xl p-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition duration-300 ">
+            <img src="https://img.icons8.com/ios-filled/100/web.png" class="w-16 h-16 mb-4" alt="Design Icon">
+            <h3 class="text-xl font-semibold mb-2">Modern Aesthetics</h3>
+            <p class="text-gray-600">Trendy layouts with responsive designs across all devices.</p>
+            <span class="text-2xl font-bold mt-4">24/7</span>
+          </div>
+        </div>
+
+        <!-- Duplicated Cards for infinite feel -->
+        <div class="swiper-slide">
+          <div class="bg-white h-60 border rounded-3xl p-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition duration-300 ">
+            <img src="https://img.icons8.com/ios-filled/100/globe.png" class="w-16 h-16 mb-4" alt="Global Icon">
+            <h3 class="text-xl font-semibold mb-2">Scalable Reach</h3>
+            <p class="text-gray-600">Serving clients across borders with consistency.</p>
+            <span class="text-2xl font-bold mt-4">50+</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Slider navigation -->
+      <div class="flex justify-center mt-4 gap-6">
+        <button class="swiper-button-prev text-2xl"></button>
+        <button class="swiper-button-next text-2xl"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 w-ful flex justify-cente">
+    <div class="w-[95%] p-10 md:px-20 md:py-10 rounded-2xl mx-auto shadow-md border bg-gradient-to-br from-white via-slate-100 to-pink-50">
+      <h2 class="text-xl font-bold text-center mb-4" data-aos="fade-up">Contact Us</h2>
+      <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        Have a project in mind or just want to say hi? Fill out the form below — we’d love to hear from you.
+      </p>
+  
+      <form class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        </div>
+  
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        </div>
+  
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+        </div>
+  
+        <div class="text-center">
+          <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-xl shadow-md transition duration-300">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="shadow-md border bg-gradient-to-br from-white via-slate-100 to-pink-5s">
+    <div class="flex justify-center gap-6 py-6" >
+      <a href="https://twitter.com/yourhandle" target="_blank" class="text-blue-500 hover:text-blue-700 text-xl">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/yourhandle" target="_blank" class="text-gray-700 hover:text-black text-xl">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourhandle" target="_blank" class="text-blue-600 hover:text-blue-800 text-xl">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:youremail@example.com" class="text-red-500 hover:text-red-700 text-xl">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  
+    <!-- Footer -->
+    <div class="text-center text-sm text-gray-500 pb-6">
+      © <script>document.write(new Date().getFullYear())</script> Your Studio Name. All rights reserved.
+    </div>
+  </footer>
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.featured-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  
+  <script>
+    const harmburger = document.querySelector('.harmburger');
+    const harmburgerMenu = document.querySelector('.harmburger-menu');
+
+    harmburger.addEventListener('click', () => {
+        const isOpen = harmburgerMenu.classList.contains('open');
+
+        if (isOpen) {
+            // Collapse
+            harmburgerMenu.style.maxHeight = '0px';
+            harmburgerMenu.classList.remove('open');
+            harmburgerMenu.classList.remove();
+        }else{
+            // Expand to actual content height
+            harmburgerMenu.style.maxHeight = harmburgerMenu.scrollHeight + 2 + 'px';
+            harmburgerMenu.classList.add('open');
+        }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      
+    });
+  </script>
+
+</body>
+</html>
