@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naman Tiwari - Web Developer Portfolio. Explore my projects, skills, and resume.">
+    <meta name="keywords" content="Naman Tiwari, web developer, frontend developer, portfolio, HTML, CSS, JavaScript, Tailwind, Bootstrap">
+    <meta name="author" content="Naman Tiwari">
+
+    <title>Naman Tiwari - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/NT.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Naman Tiwari | Frontend Developer" />
+    <meta property="og:description" content="Creating clean and modern websites using HTML, CSS, JS & Tailwind." />
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+    <meta property="og:url" content="https://naman-tiwari.netlify.app" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Naman Tiwari | Frontend Developer" />
+    <meta name="twitter:description" content="Creating clean and modern websites using HTML, CSS, JS & Tailwind." />
+    <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden select-none" style="font-family: 'Roboto', sans-serif;">
+    <header class="navbar flex justify-between items-center w-[90%] mx-auto p-2 pr-4 pl-4 backdrop-blur-md bg-white/10 rounded-lg fixed top-5 left-1/2 z-50 transform -translate-x-1/2">
+        <div class="logo w-12 h-12 select-none"><a href="#"><img src="assets/NT-removebg-preview.png" alt=""></a></div>
+        <nav class="flex pr-4">
+            <ul class="hidden md:flex space-x-6 font-bold select-none text-blue-50">
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#home">Home</a></li>
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#about">About</a></li>
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#services">Services</a></li>
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#projects">Projects</a></li>
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="templates.html">Templates</a></li>
+                <li class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="harmburger md:hidden pr-2"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <div class="harmburger-menu z-50 max-h-0 overflow-hidden origin-top transition-all duration-[400ms] ease-in-out fixed top-[85px] md:hidden flex flex-col space-y-4 text-center shadow-lg shadow-blue-400/20 bg-sky-400/20 rounded-xl w-[90%] left-1/2 transform -translate-x-1/2 backdrop-blur-md text-stone">
+        <a href="#home" class="w- p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
+        <a href="#about" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">About</a>
+        <a href="#services" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Services</a>
+        <a href="#projects" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+        <a href="templates.html" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Templates</a>
+        <a href="#contact" class="p-1 relative after:block after:w-0 after:h-[2px] after:bg-sky-400 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+    </div>
+    
+    
+    <section id="home" class="heroSection w-full flex justify-center min-h-[60vh] md:min-h-[100vh] py-28 px-4 ">
+        <div class="container max-w-7xl mx-auto flex w-[90%] items-center justify-end gap-10 md:justify-between flex-col-reverse md:flex-row">
+            <div class="heroContent flex flex-col items-center md:items-start justify-center text-center">
+                <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold mb-4 text-blue-50" data-aos="fade-right">Hello, I'm Naman Tiwari</h1>
+                <p class="text-md md:text-lg mb-8 text-blue-200" data-aos="fade-right" data-aos-delay="200">A passionate web developer and designer.</p>
+                <div class="flex gap-2">
+                    <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">View My Work</a>
+                    <a href="templates.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">Explore Templates</a>    
+                </div>
+            </div>
+            <div class="leftContainer">
+                <div class="heroProfile mb-4 w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-[0_0_8px_2px_rgba(66,215,245,0.4)]" data-aos="fade-left">
+                    <img src="assets/IMG_20241129_001051.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <div class="flex text-lg justify-center mt-4 rounded-xl backdrop-blur-md shadow-[0_0_3px_0px_rgba(66,215,245,0.3)] bg-blue-600/10 gap-10" data-aos="fade-up">
+                    <a href="https://github.com/codenamann" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600 transition"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/naman-tiwari-816b7928b/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600 transition"><i class="fab fa-linkedin"></i></a>
+                </div>                  
+            </div>
+
+        </div>
+        <div class="fixed top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
+        <div class="fixed bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
+    </section>
+
+    <section id="about" class="flex bg-white/5 min-h-screen py-12 px-8">
+        <!-- Container -->
+        <div class=" flex mx-auto space-y-10 gap-8 flex-col">
+            
+            <!-- Section Heading -->
+            <div class="text-center">
+                <h3 class="text-lg text-blue-600 font-semibold uppercase" data-aos="fade-up" data-aos-anchor-placement="top-bottom">About Me</h3>
+                <h2 class="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">Who Am I?</h2>
+            </div>
+        
+            <!-- Intro Paragraph -->
+            <p class="text-lg text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                I'm a passionate web developer who enjoys building clean, user-focused websites and turning ideas into beautiful digital products.
+            </p>
+        
+            <!-- Skills Snapshot -->
+            <div class="flex flex-wrap justify-center gap-4 overflow-hidden">
+                <span data-aos="fade-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">HTML</span>
+                <span data-aos="fade-up-right" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">CSS</span>
+                <span data-aos="fade-up" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">JavaScript</span>
+                <span data-aos="fade-up" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">Tailwind</span>
+                <span data-aos="fade-up-left" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">Git</span>
+                <span data-aos="fade-left" class="hover:bg-blue-300 hover:shadow-md hover:scale-105 hover:text-blue-950 transition duration-300 cursor-default bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-medium">GitHub</span>
+            </div>
+        
+            <!-- Download Resume Button -->
+            <div class="text-center">
+                <a href="assets/NamanTiwari_Resume.pdf" download class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+                    Download Resume
+                </a>
+            </div>
+        
+            <!-- Fun Fact / Quote -->
+            <p class="text-center italic text-sky-200 mt-2">
+                “I turn coffee into websites."
+            </p>
+        
+        </div>
+    </section>
+
+    <section id="services" class="min-h-screen py-16 px-8">
+        <!-- Container -->
+        <div class="max-w-6xl mx-auto space-y-12 overflow-x-hidden">
+      
+            <!-- Section Heading -->
+            <div class="text-center">
+                <h3 class="text-lg text-blue-600 font-semibold uppercase" data-aos="fade-up">Services</h3>
+                <h2 class="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200">What I Am Great At</h2>
+            </div>
+      
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card -->
+            <div class="p-6 rounded-xl border border-blue-500/20 bg-white/5 hover:shadow-xl transition duration-300" data-aos="fade-up-right">
+                <div class="text-3xl text-blue-500 mb-4">🌐</div>
+                <h4 class="text-xl font-semibold mb-2 text-white">Web Development</h4>
+                <p class="text-slate-300">
+                    Building responsive, high-performance websites using modern technologies like HTML, CSS, JavaScript, and Tailwind.
+                </p>
+            </div>
+      
+            <!-- Service Card -->
+            <div class="p-6 rounded-xl border border-blue-500/20 bg-white/5 hover:shadow-xl transition duration-300" data-aos="fade-up">
+                <div class="text-3xl text-blue-500 mb-4">🎨</div>
+                <h4 class="text-xl font-semibold mb-2 text-white">UI Design</h4>
+                <p class="text-slate-300">
+                    Designing clean, user-friendly interfaces with a strong emphasis on usability, accessibility, and modern aesthetics.
+                </p>
+            </div>
+      
+            <!-- Service Card -->
+            <div class="p-6 rounded-xl border border-blue-500/20 bg-white/5 hover:shadow-xl transition duration-300" data-aos="fade-up-left">
+                <div class="text-3xl text-blue-500 mb-4">⚙️</div>
+                <h4 class="text-xl font-semibold mb-2 text-white">Version Control</h4>
+                <p class="text-slate-300">
+                    Proficient with Git and GitHub for efficient project tracking, collaboration, and version management.
+                </p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        <section id="my-services" class="min-h-[60vh] py-16 ">
+            <div class="max-w-6xl mx-auto text-center space-y-12">
+                <!-- Section Heading -->
+                <div>
+                    <h3 class="text-lg text-blue-600 font-semibold uppercase">My Services</h3>
+                    <h2 class="text-3xl font-bold mt-2">What I Can Do for You</h2>
+                    <p class="mt-2 text-gray-300">Specializing in clean, responsive, and user-friendly frontend development.</p>
+                </div>
+                <!-- Swiper Container -->
+                <div class="swiper mySwiper w-full">
+                    <div class="swiper-wrapper flex items-between py-6">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <!-- Service Card 1 -->
+                            <div class="bg-white/5 backdrop-blur-sm py-2 mb-2 px-10 rounded-t-xl transition duration-300">
+                                <h4 class="text-xl font-semibold text-blue-400 mb-2">Landing Pages</h4>
+                                <p class="">Modern, fast, and attractive landing pages built with HTML, Tailwind CSS, and JavaScript.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <!-- Service Card 2 -->
+                            <div class="bg-white/5 backdrop-blur-sm py-2 px-10 rounded-t-xl transition duration-300">
+                                <h4 class="text-xl font-semibold text-blue-400 mb-2">Portfolio Websites</h4>
+                                <p>Fully responsive and aesthetic portfolios to showcase your work or personal brand.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <!-- Service Card 3 -->
+                            <div class="bg-white/5 backdrop-blur-sm py-2 px-10 rounded-t-xl transition duration-300">
+                                <h4 class="text-xl font-semibold text-blue-400 mb-2">Figma to Code</h4>
+                                <p>Convert your Figma or other design mockups into pixel-perfect responsive websites.</p>
+                            </div>                    
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Service Card 4 -->
+                            <div class="bg-white/5 backdrop-blur-sm py-2 px-10 rounded-t-xl transition duration-300">
+                                <h4 class="text-xl font-semibold text-blue-400 mb-2">Single Page Websites</h4>
+                                <p>Clean, static, one-page sites with smooth navigation and scroll-based animations (AOS).</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Service Card 5 -->
+                            <div class="bg-white/5 backdrop-blur-sm py-2 px-10 rounded-t-xl transition duration-300">
+                                <h4 class="text-xl font-semibold text-blue-400 mb-2">UI Components</h4>
+                                <p>Reusable components like buttons, forms, modals, and navbars using Tailwind and JS.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Service Card 6 -->
+                            <div class="bg-white/5 backdrop-blur-sm py-2 px-10 rounded-t-xl transition duration-300">
+                                <h4 class="text-xl font-semibold text-blue-400 mb-2">Website Optimization</h4>
+                                <p>Enhance performance and responsiveness of existing frontend projects.</p>
+                            </div>
+                        </div>
+                        <!-- Add more slides if needed -->
+                    </div>
+                
+                    <!-- Scroll dots -->
+                    <div class="swiper-pagination bg-white/5 backdrop-blur-sm w-4 rounded-b-xl"></div>
+                
+                    <!-- Navigation Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>   
+    </section>
+    <section id="projects" class="flex flex-col bg-white/5 min-h-screen py-12 px-8">
+        <div class="text-center mb-10">
+            <h3 class="text-lg text-blue-600 font-semibold uppercase" data-aos="fade-up">Projects</h3>
+            <h2 class="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200">Work in Progress</h2>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto" data-aos="fade-right">
+                I'm currently building exciting web projects! Check back soon to explore my work.
+            </p>
+        </div>
+      
+        <!-- Placeholder Cards -->
+        <div class="overflow-x-hidden grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white/5 p-6 rounded-xl shadow backdrop-blur-sm border border-white/10" data-aos="fade-left">
+                <h3 class="text-2xl font-semibold text-blue-500 mb-2">Bloodweb</h3>
+                <p class="text-gray-300 mb-4">A full-stack blood donation platform which connects donors and reciepients</p>
+                <span class="text-yellow-400 text-sm italic"><a href="https://bloodweb2.netlify.app">live</a></span>
+            </div>
+      
+            <div class="bg-white/5 p-6 rounded-xl shadow backdrop-blur-sm border border-white/10" data-aos="fade-right">
+                <h3 class="text-2xl font-semibold text-blue-500 mb-2">Chronos</h3>
+                <p class="text-gray-300 mb-4">A full-stack inventory management platform designed for dishtv distributor service</p>
+                <span class="text-yellow-400 text-sm italic">Coming soon...</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-20 px-6 text-white">
+        <div class="flex flex-col max-w-4xl mx-auto text-center items-center space-y-10" data-aos="fade-up">
+      
+            <!-- Heading -->
+            <div>
+                <h3 class="text-lg text-blue-600 uppercase font-semibold">Contact Us</h3>
+                <h2 class="text-3xl font-bold mt-2">Ways To Contact Me</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto">
+                    Got a project in mind or just want to say hi? Drop me a message.
+                </p>
+            </div>
+      
+            <!-- Contact Info Cards -->
+            <div class="inline-block flex items-center w-fit bg-blue-600 hover:bg-blue-700 transition-all duration-300 px-4 py-2 font-medium rounded-lg space-x-2">
+                <i class="fas fa-envelope text-sky-400 text-xl"></i>
+                <a href="mailto:namantiwari.dev@gmail.com" class="text-sm break-all">Send an Email</a>
+            </div>
+                  
+            <!-- Socials -->
+            <div class="flex justify-center space-x-6 text-2xl text-blue-400 mt-10">
+                <a data-aos="fade-down-right" href="https://github.com/codenamann" target="_blank"><i class="fab fa-github hover:text-white transition"></i></a>
+                <a data-aos="fade-up" href="https://www.linkedin.com/in/naman-tiwari-816b7928b" target="_blank"><i class="fab fa-linkedin hover:text-white transition"></i></a>
+                <a data-aos="fade-down-left" href="https://twitter.com/Naman_sz" target="_blank"><i class="fab fa-twitter hover:text-white transition"></i></a>
+                <!-- Fiverr icon when ready -->
+                <!-- <a href="https://www.fiverr.com/yourusername" target="_blank" class="hover:text-green-400 transition"><i class="fas fa-briefcase"></i></a> -->
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0f172a] py-6 border-t border-blue-500 text-center text-sm text-gray-400">
+        <p>© <span id="year"></span> Naman Tiwari | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        // Automatically update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+      
+      
+           
+
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>      
+    <script>
+        const harmburger = document.querySelector('.harmburger');
+        const harmburgerMenu = document.querySelector('.harmburger-menu');
+
+        harmburger.addEventListener('click', () => {
+            const isOpen = harmburgerMenu.classList.contains('open');
+
+            if (isOpen) {
+                // Collapse
+                harmburgerMenu.style.maxHeight = '0px';
+                harmburgerMenu.classList.remove('open');
+            }else{
+                // Expand to actual content height
+                harmburgerMenu.style.maxHeight = harmburgerMenu.scrollHeight + 'px';
+                harmburgerMenu.classList.add('open');
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: false, // animate every time you scroll
+            duration: 800,
+            offset: 100, // triggers a bit before the element enters
+            // disable: function () {
+            //     return window.innerWidth < 768; // Disable on screens smaller than 768px
+            // }
+        });
+    </script>
+
+</body>
+</html>
